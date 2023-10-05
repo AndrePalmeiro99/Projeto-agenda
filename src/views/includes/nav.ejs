@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Agenda</a>
+      <a class="navbar-brand" href="/contato/index">Cadastrar contato</a>
+      <% if(user) { %>
+        <a class="navbar-brand" href="/login/logout">Sair</a>
+      <% } else { %>
+        <a class="navbar-brand" href="/login/index">Entrar</a>
+      <% } %>
+    </div>
+  </nav>
